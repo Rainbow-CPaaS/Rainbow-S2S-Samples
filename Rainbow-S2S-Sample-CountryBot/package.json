@@ -1,0 +1,17 @@
+{
+  "name": "Rainbow-S2S-Sample-CountryBot",
+  "version": "1.0.0",
+  "description": "Provide basic countries information such as capitals, populations etc ...",
+  "main": "index.js",
+  "scripts": {
+    "bot": "DEBUG=swagger-tools* node --trace-warnings index.js --protocol http --port 8080"
+  },
+  "author": "J.Ouedje",
+  "license": "ISC",
+  "dependencies": {
+    "json2md": "^1.6.5",
+    "node-getopt": "^0.3.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
