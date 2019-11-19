@@ -1,4 +1,4 @@
-[Rainbow](images/logo_rainbow.png)
+![Rainbow](images/logo_rainbow.png)
 
 # Rainbow S2S (Server to Server) Starter Kit
 
