@@ -1,0 +1,228 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36mcom.ale.rainbow.s2s:s2s-client-s2s[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding s2s-client-s2s 1.0.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.10:add-source[m [1m(add_sources)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Source directory: /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/src/main/java added.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 63 source files to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.10:add-test-source[m [1m(add_test_sources)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Test Source directory: /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/src/test/java added.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 48 source files to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12:test[m [1m(default-test)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.api.ConnectionApiTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.api.PresenceApiTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.api.ConversationApiTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.api.MessageApiTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.api.RoomApiTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.MessageCreateMessageTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConnectionCreateResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConversationCreateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject7Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsMessageTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject2Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject6Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsMessageAttachmentTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConnectionCreateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject3Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsPresenceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsRoominviteTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsRoommemberTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject10Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.PresenceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.MessageTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsConnectionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsReceiptTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConnectionCreateConnectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConnectionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject4Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.MessageCreateResponseDataTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.RoomStatusTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsAllreceiptTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsRoomstateTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject9Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.AttachmentTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.PresenceUpdateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.MessageCreateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConversationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConversationCreateConversationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConnectionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsConversationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsChatstateTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject8Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ConversationsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ContentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.MessageCreateResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ApiRainbowUcsV10ConnectionsErrorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObjectTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.InlineObject5Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Concurrency config is parallel='methods', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.ale.rainbow.s2s.client.s2s.models.ReceiptStatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+
+Results :
+
+Tests run: 178, Failures: 0, Errors: 0, Skipped: 5
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.2:jar[m [1m(default-jar)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/s2s-client-s2s-1.0.0.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.8:copy-dependencies[m [1m(default)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Copying jsr305-3.0.2.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/jsr305-3.0.2.jar
+[[1;34mINFO[m] Copying gson-fire-1.8.3.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/gson-fire-1.8.3.jar
+[[1;34mINFO[m] Copying okio-1.17.2.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/okio-1.17.2.jar
+[[1;34mINFO[m] Copying logging-interceptor-3.14.2.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/logging-interceptor-3.14.2.jar
+[[1;34mINFO[m] Copying jsr250-api-1.0.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/jsr250-api-1.0.jar
+[[1;34mINFO[m] Copying commons-lang3-3.9.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/commons-lang3-3.9.jar
+[[1;34mINFO[m] Copying hamcrest-core-1.3.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/hamcrest-core-1.3.jar
+[[1;34mINFO[m] Copying gson-2.8.5.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/gson-2.8.5.jar
+[[1;34mINFO[m] Copying threetenbp-1.3.8.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/threetenbp-1.3.8.jar
+[[1;34mINFO[m] Copying okhttp-3.14.2.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/okhttp-3.14.2.jar
+[[1;34mINFO[m] Copying junit-4.12.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/junit-4.12.jar
+[[1;34mINFO[m] Copying swagger-annotations-1.5.22.jar to /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/lib/swagger-annotations-1.5.22.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.2:jar[m [1m(default)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.2:test-jar[m [1m(default)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/gitlab/rainbow-s2s-starterkit-nodejs-v2/tests/java/generated/s2s/target/s2s-client-s2s-1.0.0-tests.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-javadoc-plugin:2.10.4:jar[m [1m(attach-javadocs)[m @ [36ms2s-client-s2s[0;1m ---[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  25.915 s
+[[1;34mINFO[m] Finished at: 2020-01-22T10:19:48+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-javadoc-plugin:2.10.4:jar[m [1m(attach-javadocs)[m on project [36ms2s-client-s2s[m: [1;31mMavenReportException: Error while generating Javadoc: Unable to find javadoc command: The environment variable JAVA_HOME is not correctly set.[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

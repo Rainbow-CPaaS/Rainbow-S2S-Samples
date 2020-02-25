@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.ale.rainbow.s2s"},{"l":"com.ale.rainbow.s2s.bot"},{"l":"com.ale.rainbow.s2s.events"},{"l":"com.ale.rainbow.s2s.tools"}]
