@@ -1,6 +1,0 @@
-2020-02-21 23:24:20,047 DEBUG c.a.r.s.App [main] Stating EchoBot nb param = 3 
-2020-02-21 23:24:20,052 DEBUG c.a.r.s.App [main] currentRelativePath =  
-2020-02-21 23:24:20,053 DEBUG c.a.r.s.App [main] curentFullPath = /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/output/JavaS2SBotSample 
-2020-02-21 23:24:20,053 DEBUG c.a.r.s.App [main] Programm parameter => callbackUrl => [config/config.json] 
-2020-02-21 23:24:20,053 DEBUG c.a.r.s.App [main] Current relative path is: /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/output/JavaS2SBotSample 
-2020-02-21 23:24:20,053 ERROR c.a.r.s.App [main] /home/jouedje/Alcatel-Lucent/S2Sdeveloppements/Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/output/JavaS2SBotSample/https:/8321ddbf.ngrok.io not found ! 

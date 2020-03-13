@@ -1,0 +1,202 @@
+2020-03-13 10:44:52,708 DEBUG c.a.r.s.App [main] Stating EchoBot nb param = 3 
+2020-03-13 10:44:52,712 DEBUG c.a.r.s.App [main] currentRelativePath =  
+2020-03-13 10:44:52,712 DEBUG c.a.r.s.App [main] curentFullPath = /home/isaac/Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/output/JavaS2SBotSample 
+2020-03-13 10:44:52,712 DEBUG c.a.r.s.App [main] Programm parameter => callbackUrl => [https://d9f3a8bc.ngrok.io] 
+2020-03-13 10:44:52,713 DEBUG c.a.r.s.App [main] Programm parameter => starterkit_config_fullpath => [../../botloader/config/config.json] 
+2020-03-13 10:44:53,227 DEBUG c.a.r.s.b.EchoBot [main] fullPathConfig :/home/isaac/Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/output/JavaS2SBotSample/../../botloader/config/config.json 
+2020-03-13 10:44:53,250 DEBUG c.a.r.s.b.EchoBot [main] xRainbowAppAuth :Basic ZGJiNmQ5MjA3NTVhMTFlODgwNTExMWJmYTYzNWFkMmY6NzU3MWQzMzJjZDU5MTM1NzVjMGI5NGViMDdkM2RhZTA2MmM0YjEwODgwODVhMzM1YjUwMGQ2YWNlZDJmNmQ0MQ== 
+2020-03-13 10:44:53,250 DEBUG c.a.r.s.b.EchoBot [main] xRainbowClient :java_bot 
+2020-03-13 10:44:53,250 DEBUG c.a.r.s.b.EchoBot [main] xRainbowClientVersion :1.0.0 
+2020-03-13 10:44:53,250 DEBUG c.a.r.s.b.EchoBot [main] Authenticating ... 
+2020-03-13 10:44:53,263 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] zmq port :3000 
+2020-03-13 10:44:53,318 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] subscribing to zmq socket tcp://127.0.0.1:3000 ... 
+2020-03-13 10:44:53,371 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:44:53,889 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:44:53,892 WARN c.a.r.s.e.RainbowEventHandler [Thread-0] Event not handled by bot :rainbow_onbubblestatechanged 
+2020-03-13 10:44:53,892 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:44:53,910 DEBUG c.a.r.s.b.EchoBot [main] Autthnetication result : 
+2020-03-13 10:44:53,915 DEBUG c.a.r.s.b.EchoBot [main] class GetBasicLoginSuccess {
+    data: null
+    phoneNumbers: null
+    country: null
+    loggedInApplication: class GetBasicLoginSuccessLoggedInApplication {
+        activity: NONE
+        dateOfCreation: 2018-06-21T13:56:12.850Z
+        dateOfDeployment: null
+        dateOfDeploymentRequest: null
+        env: deployed
+        id: dbb6d920755a11e8805111bfa635ad2f
+        name: QA tests
+        ownerId: 56ec1dc61b23c5be3c7bde28
+        platform: official
+        state: active
+        type: server
+    }
+    loggedInUser: class GetBasicLoginSuccessLoggedInUser {
+        activationDate: 2019-02-01T09:26:40.322Z
+        adminType: undefined
+        companyId: 56e68bdaf39fa6b4311652b9
+        companyName: Rainbow
+        country: FRA
+        createdByAdmin: null
+        createdBySelfRegister: true
+        creationDate: 2019-02-01T09:25:32.787Z
+        displayName: George Benson
+        emails: [class GetBasicLoginSuccessEmails {
+            email: jo.sophia06560@gmail.com
+            type: work
+        }]
+        firstLoginDate: 2019-02-01T09:26:40.795Z
+        firstName: George
+        guestMode: false
+        id: 5c5410d0d36bf7149b4bb93d
+        initializationDate: 2019-02-01T09:27:32.400Z
+        invitedBy: null
+        isADSearchAvailable: false
+        isActive: true
+        isInDefaultCompany: true
+        isInitialized: true
+        isTerminated: false
+        jidIm: 97f003cdc22f411a835c57170c5cca4e@openrainbow.net
+        jidPassword: 503f9edcc71f4fde81ad6bc7853a5403
+        jidTel: tel_97f003cdc22f411a835c57170c5cca4e@openrainbow.net
+        jobTitle: null
+        language: fr
+        lastAvatarUpdateDate: null
+        lastLoginDate: 2020-03-13T09:44:44.260Z
+        lastName: Benson
+        lastUpdateDate: 2020-03-12T18:03:03.589Z
+        loggedSince: 2020-03-13T09:44:44.260Z
+        loginEmail: jo.sophia06560@gmail.com
+        nickName: null
+        organisationId: null
+        phoneNumbers: []
+        profiles: [class GetBasicLoginSuccessProfiles {
+            assignationDate: 2019-02-01T09:26:40.328Z
+            businessModel: none
+            businessSpecific: [NONE]
+            canBeSold: false
+            hasConference: false
+            isDefault: true
+            isDemo: null
+            isExclusive: false
+            isPrepaid: false
+            offerId: 580a2ea9d888727b948c75ee
+            offerName: Essential
+            offerTechnicalDescription: Essential
+            prepaidDuration: null
+            profileId: 580a2ea9d888727b948c75ed
+            profileName: Essential
+            provisioningNeeded: []
+            status: active
+            subscriptionId: 580a2f85e885f3394123a68b
+            zuoraOfferId: null
+            zuoraProductRatePlanChargeId: null
+            zuoraProductRatePlanId: null
+        }]
+        roles: [user]
+        siteId: null
+        tags: []
+        timeToLive: -1
+        timezone: null
+        title: null
+        userInfo1: null
+        userInfo2: null
+        visibility: same_than_company
+    }
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudFJlbmV3ZWQiOjAsIm1heFRva2VuUmVuZXciOjcsInVzZXIiOnsiaWQiOiI1YzU0MTBkMGQzNmJmNzE0OWI0YmI5M2QiLCJsb2dpbkVtYWlsIjoiam8uc29waGlhMDY1NjBAZ21haWwuY29tIn0sImFwcCI6eyJpZCI6ImRiYjZkOTIwNzU1YTExZTg4MDUxMTFiZmE2MzVhZDJmIiwibmFtZSI6IlFBIHRlc3RzIn0sImlhdCI6MTU4NDA5MjY5NCwiZXhwIjoxNTg1Mzg4Njk0fQ.QqXwNLmwH8a140_EmamSVc3347VRvxpNYReI_QFDZs1oIfXuT0QmFQ_iX7FoR0s58EM0ZSQvknssClSJMVOfENcmjsGMBRvPSyeebZZ7glyjockK88S3D4RUFGzHYWgv3uuc9bp0_yb0URCiwFD3MeeAVIiTnkOoNHdnhCme6NdF-v4N2mFpsIcDejcjauAQvDWxm0wun_x-5isBbGAy4cCX-0_MQ_68hX7ByFjK1PevQp8tg0AGzWW9f-jsNWtQ1FH8kM1K0uWPsIyBsq6bLNoHnXkZ_y7zaKYkhHqfrT-mYDVrqqeGBF9cyw8Ku4cb1d2YgUTg--9ULRwas80o6w
+} 
+2020-03-13 10:44:53,916 DEBUG c.a.r.s.b.EchoBot [main] eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudFJlbmV3ZWQiOjAsIm1heFRva2VuUmVuZXciOjcsInVzZXIiOnsiaWQiOiI1YzU0MTBkMGQzNmJmNzE0OWI0YmI5M2QiLCJsb2dpbkVtYWlsIjoiam8uc29waGlhMDY1NjBAZ21haWwuY29tIn0sImFwcCI6eyJpZCI6ImRiYjZkOTIwNzU1YTExZTg4MDUxMTFiZmE2MzVhZDJmIiwibmFtZSI6IlFBIHRlc3RzIn0sImlhdCI6MTU4NDA5MjY5NCwiZXhwIjoxNTg1Mzg4Njk0fQ.QqXwNLmwH8a140_EmamSVc3347VRvxpNYReI_QFDZs1oIfXuT0QmFQ_iX7FoR0s58EM0ZSQvknssClSJMVOfENcmjsGMBRvPSyeebZZ7glyjockK88S3D4RUFGzHYWgv3uuc9bp0_yb0URCiwFD3MeeAVIiTnkOoNHdnhCme6NdF-v4N2mFpsIcDejcjauAQvDWxm0wun_x-5isBbGAy4cCX-0_MQ_68hX7ByFjK1PevQp8tg0AGzWW9f-jsNWtQ1FH8kM1K0uWPsIyBsq6bLNoHnXkZ_y7zaKYkhHqfrT-mYDVrqqeGBF9cyw8Ku4cb1d2YgUTg--9ULRwas80o6w 
+2020-03-13 10:44:53,918 DEBUG c.a.r.s.b.EchoBot [main] ConnectionCreate : 
+2020-03-13 10:44:53,918 DEBUG c.a.r.s.b.EchoBot [main] class ConnectionCreate {
+    connection: class ConnectionCreateConnection {
+        resource: 
+        callbackUrl: https://d9f3a8bc.ngrok.io
+    }
+} 
+2020-03-13 10:44:54,252 DEBUG c.a.r.s.b.EchoBot [main] class ConnectionCreateResponse {
+    data: class Connection {
+        resource: s2s_startekit_5f25b459-cae6-4401-8995-2245a492b001
+        id: 4539871c-650f-11ea-80dc-0050562cb550
+        callbackUrl: https://d9f3a8bc.ngrok.io
+    }
+} 
+2020-03-13 10:44:54,400 DEBUG c.a.r.s.App [main] Rainbow event handler started 
+2020-03-13 10:44:54,504 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:44:54,505 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:44:54,507 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onpresencechanged :{"id":"4539871c-650f-11ea-80dc-0050562cb550","presence":{"resource":"s2s_startekit_5f25b459-cae6-4401-8995-2245a492b001","from":"5c5410d0d36bf7149b4bb93d"},"timestamp":"2020-03-13T09:44:54.931707Z"} 
+2020-03-13 10:44:54,508 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONPRESENCECHANGED 
+2020-03-13 10:48:33,701 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:48:33,701 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:48:33,701 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onpresencechanged :{"id":"4539871c-650f-11ea-80dc-0050562cb550","presence":{"resource":"web_win_1.69.1_HATK06wJ","from":"5c5d51fb178da0da1bd69028"},"timestamp":"2020-03-13T09:48:33.783833Z"} 
+2020-03-13 10:48:33,702 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONPRESENCECHANGED 
+2020-03-13 10:49:02,479 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:02,479 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:02,479 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"inactive"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:02.899399Z"} 
+2020-03-13 10:49:02,480 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:02,480 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = inactive 
+2020-03-13 10:49:02,480 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] In sendMessage 
+2020-03-13 10:49:02,807 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] Out sendMessage 
+2020-03-13 10:49:02,909 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:02,909 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:02,910 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onmessagereceiptreadreceived :{"receipt":{"conversation_id":"0000000000000000","msg_id":"df4ab006-650f-11ea-811c-0050562cb550","event":"received","entity":"server"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:03.336454Z"} 
+2020-03-13 10:49:02,910 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONMESSAGERECEIPTREADRECEIVED 
+2020-03-13 10:49:03,157 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:03,157 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:03,157 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onmessagereceiptreadreceived :{"receipt":{"conversation_id":"5c5d52739ca53cda276284c6","msg_id":"df4ab006-650f-11ea-811c-0050562cb550","event":"received","entity":"client"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:03.424888Z"} 
+2020-03-13 10:49:03,158 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONMESSAGERECEIPTREADRECEIVED 
+2020-03-13 10:49:19,814 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:19,814 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:19,814 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onmessagereceiptreadreceived :{"receipt":{"conversation_id":"5c5d52739ca53cda276284c6","msg_id":"df4ab006-650f-11ea-811c-0050562cb550","event":"read","entity":"client"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:20.241480Z"} 
+2020-03-13 10:49:19,815 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONMESSAGERECEIPTREADRECEIVED 
+2020-03-13 10:49:20,059 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:20,059 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:20,059 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"active"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:20.490745Z"} 
+2020-03-13 10:49:20,059 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:20,059 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = active 
+2020-03-13 10:49:25,736 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:25,737 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:25,738 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"inactive"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:26.168356Z"} 
+2020-03-13 10:49:25,738 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:25,738 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = inactive 
+2020-03-13 10:49:25,980 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:25,981 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:25,981 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"active"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:26.413060Z"} 
+2020-03-13 10:49:25,981 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:25,981 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = active 
+2020-03-13 10:49:28,514 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:28,514 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:28,514 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"inactive"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:28.947004Z"} 
+2020-03-13 10:49:28,515 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:28,515 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = inactive 
+2020-03-13 10:49:39,072 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:39,073 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:39,073 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"active"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:39.501633Z"} 
+2020-03-13 10:49:39,073 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:39,073 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = active 
+2020-03-13 10:49:41,271 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:41,272 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:41,272 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"composing"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:41.703243Z"} 
+2020-03-13 10:49:41,272 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:41,272 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = composing 
+2020-03-13 10:49:42,512 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:42,513 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:42,513 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onchatstate :{"chatstate":{"peer":"5c5d51fb178da0da1bd69028","conversation_id":"5c5d52739ca53cda276284c6","state":"active"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:42.944562Z"} 
+2020-03-13 10:49:42,513 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONCHATSTATE 
+2020-03-13 10:49:42,513 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] state = active 
+2020-03-13 10:49:42,758 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:42,758 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:42,758 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onmessagereceived :{"id":"4539871c-650f-11ea-80dc-0050562cb550","message":{"conversation_id":"5c5d52739ca53cda276284c6","from":"5c5d51fb178da0da1bd69028","id":"web_35b15398-ca69-4a0f-8dd9-fb2429e4129e0","lang":"fr","body":"#test"},"timestamp":"2020-03-13T09:49:42.941178Z"} 
+2020-03-13 10:49:42,758 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONMESSAGERECEIVED 
+2020-03-13 10:49:42,758 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] #test 
+2020-03-13 10:49:42,758 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] Echo bot a reçu le message #test 
+2020-03-13 10:49:42,759 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] In sendMessage 
+2020-03-13 10:49:43,053 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] Out sendMessage 
+2020-03-13 10:49:43,155 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:43,156 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:43,156 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onmessagereceiptreadreceived :{"receipt":{"conversation_id":"0000000000000000","msg_id":"f748325a-650f-11ea-8364-0050562cb550","event":"received","entity":"server"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:43.585674Z"} 
+2020-03-13 10:49:43,156 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONMESSAGERECEIPTREADRECEIVED 
+2020-03-13 10:49:43,398 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] webhook event relayed recieved, process it. 
+2020-03-13 10:49:43,399 DEBUG c.a.r.s.e.RainbowEventHandler [Thread-0] waiting for relayed webhook event... 
+2020-03-13 10:49:43,399 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] rainbow_onmessagereceiptreadreceived :{"receipt":{"conversation_id":"5c5d52739ca53cda276284c6","msg_id":"f748325a-650f-11ea-8364-0050562cb550","event":"read","entity":"client"},"id":"4539871c-650f-11ea-80dc-0050562cb550","timestamp":"2020-03-13T09:49:43.645332Z"} 
+2020-03-13 10:49:43,399 DEBUG c.a.r.s.b.EchoBot [ForkJoinPool.commonPool-worker-3] RAINBOW_ONMESSAGERECEIPTREADRECEIVED 

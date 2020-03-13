@@ -69,13 +69,21 @@ public class RainbowEventHandler implements Runnable {
                 event = ZMQ.recv(recv, 0);
                 eventContent = ZMQ.recv(recv, 0);
                 String e = new String(event.data());
+                if(e.equalsIgnoreCase("zmq-stop")){
+                    RainbowEventHandler.canStop = true;
+                    continue;
+                }
                 String ec = new String(eventContent.data());
                 logger.debug("webhook event relayed recieved, process it.");
                 ec = ec.substring(1, ec.length() - 1);
                 ec = ec.replace("\\\\", "!~!").replace("\\", "").replace("!~!", "\\");
                 JSONObject json = (JSONObject) parser.parse(ec);
-                RainbowCallbackItem item = new RainbowCallbackItem(e, json);
-                publisher.submit(item);
+                if(RainbowEventName.get(e)!=RainbowEventName.UNKNOWN){
+                    RainbowCallbackItem item = new RainbowCallbackItem(e, json);                
+                    publisher.submit(item);
+                }else{
+                    logger.warn("Event not handled by bot :"+e);
+                }
             }
             logger.debug("closing zmq subscription...");
             if(recv!=null){

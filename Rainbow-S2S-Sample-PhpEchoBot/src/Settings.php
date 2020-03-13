@@ -11,10 +11,11 @@ class Settings
     {
     }
 
-    public static function init()
+    public static function init($fullpathConfig)
     {
         try {
-            $jsonConfig = file_get_contents(__DIR__ . "/config/config.json");
+            //$jsonConfig = file_get_contents(__DIR__ . "/config/config.json");
+            $jsonConfig = file_get_contents($fullpathConfig);
             self::$jsonSettings = json_decode($jsonConfig, TRUE);
             print_r(self::$jsonSettings);
             self::$jsonPathData = new JSONPath(self::$jsonSettings);
@@ -41,5 +42,4 @@ class Settings
         return self::find($jsonPathQuery, null);
     }
 }
-
-Settings::init();
+//Settings::init();

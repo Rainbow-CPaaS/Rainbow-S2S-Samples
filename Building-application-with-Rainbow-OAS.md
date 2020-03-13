@@ -125,20 +125,33 @@ This module validates all recieved data according to contract defined in swagger
 
 S2S predefined event list :
 
-| S2S events |
+| S2S events | Description |
 |-------------------------------------|
-| rainbow_onchatstate |
-| rainbow_onroommember |
-| rainbow_onroominvite |
-| rainbow_onbubbleinvitationreceived |
-| rainbow_onconnected |
-| rainbow_onreceipt |
-| rainbow_onallreceiptrecived |
-| rainbow_onmessagereceived |
-| rainbow_onpresencechanged |
-| rainbow_onroomstate |
-| rainbow_onalldeleted |
-| rainbow_onconversation |
+| **rainbow_onconnectioncreated** | Fired when the connection with rainbow is created bot not sign in |
+| **rainbow_onconnectionerror** | Fired when the connection can't be done with Rainbow (ie. issue on sign-in) |
+| **rainbow_onmessagereceived** | Fired when a one-to-one message is received |
+| **rainbow_onmessageserverreceiptreceived** | Fired when the message has been received by the server |
+| **rainbow_onmessagereceiptreceived** | Fired when the message has been received by the recipient |
+| **rainbow_onmessagereceiptreadreceived** | Fired when the message has been read by the recipient |
+| **rainbow_onallmessagereceiptreceived** | Fired when the all message has been received by the recipient |
+| **rainbow_onallmessagereceiptsent** | Fired when the all message has been sent to the recipient |
+| **rainbow_onpresencechanged** | fired when the presence of the connected user changes |
+| **rainbow_onerror** |  Fired when something goes wrong (ie: bad 'configurations' parameter, impossible to connect or reconnect, etc...) |
+| **rainbow_onbubbleremoved** | Fired when a bubble the connected user is member of is deleted |
+| **rainbow_onbubbleinvitationreceived** | Fired when an invitation to join a bubble is received |
+| **rainbow_onready** | Fired when S2S starterkit is connected to Rainbow and ready to be used |
+| **rainbow_onstarted** | Fired when the S2S starterkit has successfully started (not yet signed in) |
+| **rainbow_onconnected** | Fired when the connection is successfull with Rainbow (signin complete) |
+| **rainbow_onstopped** | Fired when the connection has stooped |
+| **rainbow_ondisconnected** | Fired when the S2S starterkit lost the connection with Rainbow |
+| **rainbow_onreconnecting** | Fired when the SDK tries to reconnect |
+| **rainbow_onfailed** | Fired when the SDK didn't succeed to reconnect and stop trying |
+| **rainbow_onbubbleaffiliationchanged** | Fired when a user changes his affiliation with a bubble |
+| **rainbow_onconversationremoved** | Fired when a conversation is deleted |
+| **rainbow_onconversationcreated** | Fired when a conversation is created |
+| **rainbow_onconversationupdate** | Fired when a conversation is updated |
+| **rainbow_onchatstate** | Fired when a chat state change occurs in a conversation |
+| **rainbow_onreceipt** | Fired when a receipt notification occurs |
 
 #### Webhook event forwarding using zmq
 
@@ -359,7 +372,7 @@ namespace Ale\Rainbow\S2S\Client\AuthPortal\Model => for models used in API
 
 For all generated client an API documentation is also automatically generated
 
-This documentaion explains API usage for all actions defained in swagger.
+This documentaion explains API usage for all actions defined in swagger.
 
 See generated_api_output_directory/docs.
 
@@ -401,7 +414,6 @@ namespace Ale\Rainbow\S2S\Client\S2S\Model => for models used in API
 
 ```
 
-
 ## Integrating Rainbow-S2S-Starterkit-nodejs with Bot developped using other languages than NodeJS
 
 
@@ -417,7 +429,7 @@ In previous sections we've explained :
 
 We will now focus on callback_url and explain the importance of sharing it between Client API ( in other languages ) and raibow-s2s-starterkit-nodejs.
 
-#### callback_url role
+### callback_url role
 
 
 ![callback_url role ](./images/callback_url_role.jpg)
@@ -456,36 +468,66 @@ So Bot can be implemented to get callbak_url by reading /tmp/s2s/s2s_callback_ur
 }
 ```
 
-### Start a bot written in another language than NodeJS
+### Bot implementation guide line
 
-Before all,  get rainbow-s2s-starterkit-nodejs from github if not done.
+You are ready to build your own bot in another languae that nodejs.
+Don't hesitate to have a look at generated API docs and code source samples.
+
+To test your first API call, you can install and setup rainbow-s2s-starterkit-nodejs webhook event manager in a directory :
+
+>mkdir mys2s_webhook_handler
+> cd mys2s_webhook_handler
+>mys2s_webhook_handler$ npm init
+>mys2s_webhook_handler$ npm install rainbow-s2s-starterkit-nodejs
+
+Update config/config.json
+
+Rename s2snode-core-starter.js.sample to s2snode-core-starter.js
+
+>mys2s_webhook_handler$ mv s2snode-core-starter.js.sample s2snode-core-starter.js
+
+Start the webhook event handler
+
+>mys2s_webhook_handler$ node s2snode-core-starter.js
+
+Test your API call and see if events are returned back by Rainbow
+
+To connect to Rainbow using your API,your are required to use a callback_url in connection API.
+You can use the callback_url written in /tmp/s2s/s2s_callback_url.json by rainbow-s2s-starterkit-nodejs (section [callback_url role](#callback_url-role))
+
+### Start a bot written in another language than NodeJS
 
 [Rainbow-S2S-StarterKit-NodeJS](https://github.com/Rainbow-CPaaS/Rainbow-S2S-StarterKit-NodeJS.git)
 
 #### Bot that reads callback_url from /tmp/s2s/s2s_callback_url.json (for testing)
 
-1 - go to rainbow-s2s-starterkit-nodejs directory
+Everything said here has already been mentioned.
 
-3 - run npm s2snode ( the callabck_url will be write in tmp directory as mentioned section [callback_url role](#callback_url-role)
+1 - Create an empty NodeJS project
 
-4 - start your Bot ( depending on choosen language ) 
+2 - go to your project directory and install rainbwo-s2s-starterkit-nodejs as already mentioned above.
 
-#### Bot that reads callback_url from command line parameter
+3 - Start the S2S starterkit core
 
-If your bot reads callback_url from comand line argument ( the preferd method ), you can test it as follow.
+4 - Start your Bot ( depending on choosen language ) 
 
-1 - go to rainbow-s2s-starterkit-nodejs directory
+#### Bot that reads callback_url from command line parameter (for testing)
 
-3 - run npm s2snode
+If your bot reads callback_url from comand line argument (the preferd method), you can test it as follow.
+
+1 - Create an empty NodeJS project (it can be a sub-directory of your Bot)
+
+2 - go to your project directory and install rainbwo-s2s-starterkit-nodejs
+
+3 - start rainbow-s2s-starterkit-nodejs.
 
 The callabck url is printed on standard output when starting rainbow-s2s-starterkit-nodejs.
 
-4 - start your Bot ( depending on choosen language ) by passing the callback url as parameter.
+4 - start your Bot (depending on choosen language) by passing the callback url as parameter.
 
+##### Start your Bot with raibow-s2s-starterkit-nodejs
 
-##### Start Rainbow-S2S-StarterKit-NodeJS and your Bot using one single nodejs script.
-
-So if you have build a bot that reads command line argument, this one can be loaded by a nodejs script that will also starts raibow-s2s-starterkit-nodejs and pass the callback_url to it. 
+So if you have build a bot that reads command line argument, it can be started by raibow-s2s-starterkit-nodejs.
 
 raibow-s2s-starterkit-nodejs comme with a script ready to use
 
@@ -493,9 +535,9 @@ Let's expose the implementation principle
 
 ##### Rainbow-S2S-StarterKit-NodeJS ready to use startup script (s2s-zmq-bot-loader.js) impementation principle
 
-The principle is to get callabck url from S2S NodeJS starterkit module and call Bot from other language by passing tat callback_url as command argument.
+The principle is to get callabck url from S2S NodeJS starterkit module and call the Bot (written in another language) by passing that callback_url as command argument.
 
-As the s2s-zmq-bot-loader.js script, is generic for all languanges, the bot language interpreter and its start up arguments must be configure in a json file.
+As the s2s-zmq-bot-loader.js script, is generic for all languanges, the bot language interpreter and its start up arguments is configurable in a json file.
 
 ```
 [bot-loader-params.json]
@@ -508,49 +550,23 @@ As the s2s-zmq-bot-loader.js script, is generic for all languanges, the bot lang
 }
 ```
 
-The script and a sample configuration file can be find in Rainbow-S2S-StarterKit-NodeJS under rainbow-s2s-starterkit-nodejs/non-nodejs-bot-loader.
+The script and a sample configuration file is provided when installing rainbow-s2s-starterkit-nodejs.
 
-#### how to use nodejs bot loader ready to use script
+##### How to use rainbow-s2s-starterkit-nodejs bot loader ready to use script
 
-if your working directory is **my_working_dir**
+If your working directory is **my_working_dir**
 
 supposing your have a php bot is in the directory my_working_dir/**mybot** and a starting script called **start.php**
 
 - go to my_working_dir
  my_working_dir#
 
-- get rainbow-s2s-starterkit-nodejs from github 
+- Create an NodeJS empty project (mybotloader) and install rainbow-s2s-starterkit-nodejs
 
-- go to rainbow-s2s-starterkit-nodejs
+Update configuration files as already seen.
 
-cd rainbow-s2s-starterkit-nodejs
-my_working_dir/rainbow-s2s-starterkit-nodejs#
-
-- type npm install
-
-my_working_dir/rainbow-s2s-starterkit-nodejs# npm install
-
-- type npm link
-
-my_working_dir/rainbow-s2s-starterkit-nodejs# npm link
-
-- copy  rainbow-s2s-starterkit-nodejs/non-nodejs-bot-loader directory in a loaction (rename the non-nodejs-bot-loader to what you want)
-
-my_working_dir/rainbow-s2s-starterkit-nodejs# cd ..
-my_working_dir# cp rainbow-s2s-starterkit-nodejs/non-nodejs-bot-loader **mybotloader**
-my_working_dir# cd mybotloader
-
-- initialize a node working dir by typing npm init
-
-/my_working_dir/mybotloader# npm init
-
-- type npm link my_working_dir/rainbow-s2s-starterkit-nodejs to make rainbow-s2s-starterkit-nodejs available to mybotloader module
-
-/my_working_dir/mybotloader#npm link my_working_dir/rainbow-s2s-starterkit-nodejs
-
-- edit /my_working_dir/mybotloader/config/s2sStarterkitConfig.json to fit your credentials and parameters
-
-- edit /my_working_dir/mybotloader/config/bot-loader-params.json to fit your bot loading parameters
+- Edit /my_working_dir/mybotloader/config/config.json to fit your credentials and parameters
+- Edit /my_working_dir/mybotloader/config/bot-loader-params.json to fit your bot loading parameters
 
 ```
 [/my_working_dir/mybotloader/config/bot-loader-params.json]
@@ -564,16 +580,40 @@ my_working_dir# cd mybotloader
 
 interpreter is your bot language interpreter
 program is your bot main loader
-args is the arguments that you bot needs if required
+args is the arguments that your bot needs if required
 
 ```
 
-- start your bot by typing node s2s-zmq-bot-loader.js
+- Rename s2s-zmq-bot-loader.js.sample to s2s-zmq-bot-loader.js
 
-/my_working_dir/mybotloader# node s2s-zmq-bot-loader.js
+- Start your bot and rainbow-s2s-starterkit-nodejs webhook by typing node s2s-zmq-bot-loader.js
 
-The callbak url will be passed to /my_working_dir/mybot/start.php in parameter
+>/my_working_dir/mybotloader# node s2s-zmq-bot-loader.js
+
+The callbak url will be passed to /my_working_dir/mybot/start.php as argument
 
 s2s-zmq-bot-loader.js will start rainbow-s2s-starterkit-nodejs and the bot by calling /usr/bin/php /my_working_dir/mybot/start.php callback_url
 
+WARNING:
 
+If you have other parameters to pass to your bot, we advise tou to use options forms like -p1=xxx or --p1=xxx.
+Of course your bot should be implemented to read those options.
+
+The config/bot-loader-params.json will look like this :
+
+```
+[/my_working_dir/mybotloader/config/bot-loader-params.json]
+{
+        "interpreter": "/usr/bin/php",
+        "program": "/my_working_dir/mybot/start.php",
+        "isblocking": "true"
+        "args": [
+		"--p1=xxx",
+		"--p2=xxxx",
+		...
+		"--pn=xxxx"
+        ]
+}
+```
+
+s2s-zmq-bot-loader.js will start rainbow-s2s-starterkit-nodejs and the bot by calling /usr/bin/php /my_working_dir/mybot/start.php callback_url --p1=xxx --p2=xxx ... -pn=xxx

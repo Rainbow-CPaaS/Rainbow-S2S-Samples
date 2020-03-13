@@ -39,7 +39,7 @@ public class RainbowCallbackItem {
         return eventData;
     }
     
-    public Object ge(String key) throws Exception {
+    public Object get(String key) throws Exception {
         if(eventData.containsKey(key)){
             return eventData.get(key);
         }

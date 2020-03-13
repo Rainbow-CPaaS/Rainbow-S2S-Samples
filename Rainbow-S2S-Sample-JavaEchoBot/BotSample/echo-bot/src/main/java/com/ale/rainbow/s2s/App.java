@@ -39,12 +39,12 @@ public class App {
         //String curentFullPath = currentUsersHomeDir+ File.separator +"fake"+ File.separator +"botstarter";
         String curentFullPath = currentRelativePath.toAbsolutePath().toString();
         logger.debug("curentFullPath = "+curentFullPath);
-        String mainConfigRelativePath ="";
+        String starterkitConfigFullpath ="";
         
         String callbackUrl = "";
         if (args.length == 3) {
             callbackUrl = args[1];
-            mainConfigRelativePath = args[2];
+            starterkitConfigFullpath = args[2];
         }else{
             logger.error("Missing arguments : Usage bot_program <callabck_url> <starterkit_config_fullpath.json>");
             return;
@@ -69,28 +69,21 @@ public class App {
                 return;
             }
             logger.debug("Programm parameter => callbackUrl => ["+callbackUrl+"]");
+            logger.debug("Programm parameter => starterkit_config_fullpath => ["+starterkitConfigFullpath+"]");
 
-            logger.debug("Current relative path is: " + curentFullPath);
-            //File zmqConfFile = new File(curentFullPath + File.separator + ".." + File.separator + "config" + File.separator + "zmq.json");
-            /*
-            File zmqConfFile = new File(curentFullPath + File.separator + "config" + File.separator + "zmq.json");
-            if (!zmqConfFile.exists()) {
-                logger.error(zmqConfFile.getAbsolutePath() + " not found !");
-                return;
-            }*/
-            File mainConfigFile = new File(curentFullPath + File.separator + mainConfigRelativePath);
+            File mainConfigFile = new File(starterkitConfigFullpath);
             if (!mainConfigFile.exists()) {
                 logger.error(mainConfigFile.getAbsolutePath() + " not found !");
                 return;
             }
             
-            RainbowEventHandler rainbowEventHandler = new RainbowEventHandler(curentFullPath+ File.separator + "config");
+            RainbowEventHandler rainbowEventHandler = new RainbowEventHandler(mainConfigFile.getAbsolutePath());
             Thread mainThread = new Thread(rainbowEventHandler);
             /*
             RainbowEventSubscriber<RainbowCallbackItem> subscriber = new RainbowEventSubscriber();
             rainbowEventHandler.subscribe(subscriber);
             */
-            EchoBot<RainbowCallbackItem> bot = new EchoBot(curentFullPath+ File.separator + "config");
+            EchoBot<RainbowCallbackItem> bot = new EchoBot(mainConfigFile.getAbsolutePath());
             rainbowEventHandler.subscribe(bot);
             mainThread.start();
 

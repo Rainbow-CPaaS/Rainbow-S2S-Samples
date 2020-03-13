@@ -30,50 +30,80 @@ public class RainbowEventSubscriber<T> implements Subscriber<T> {
         logger.debug(t.toString());
         RainbowCallbackItem item = (RainbowCallbackItem) t;
         switch (item.getEventEnum()) {
-            case RAINBOW_ONREADY:
-                logger.debug("RAINBOW_ONREADY");
+        case RAINBOW_ONCONNECTIONCREATED:
+                logger.debug("RAINBOW_ONCONNECTIONCREATED");
                 break;
-            case RAINBOW_ONCONNECTED:
-                logger.debug("RAINBOW_ONCONNECTED");
+        case RAINBOW_ONCONNECTIONERROR:
+                logger.debug("RAINBOW_ONCONNECTIONERROR");
                 break;
-            case RAINBOW_ONERROR:
-                System.out.println("RAINBOW_ONERROR");
-                break;
-            case RAINBOW_ONMESSAGERECEIVED:
+        case RAINBOW_ONMESSAGERECEIVED:
                 logger.debug("RAINBOW_ONMESSAGERECEIVED");
                 break;
-            case RAINBOW_ONCHATSTATE:
-                logger.debug("RAINBOW_ONCHATSTATE");
+        case RAINBOW_ONMESSAGESERVERRECEIPTRECEIVED:
+                logger.debug("RAINBOW_ONMESSAGESERVERRECEIPTRECEIVED");
                 break;
-            case RAINBOW_ONPRESENCECHANGED:
+        case RAINBOW_ONMESSAGERECEIPTRECEIVED:
+                logger.debug("RAINBOW_ONMESSAGERECEIPTRECEIVED");
+                break;
+        case RAINBOW_ONMESSAGERECEIPTREADRECEIVED:
+                logger.debug("RAINBOW_ONMESSAGERECEIPTREADRECEIVED");
+                break;
+        case RAINBOW_ONALLMESSAGERECEIPTRECEIVED:
+                logger.debug("RAINBOW_ONALLMESSAGERECEIPTRECEIVED");
+                break;
+        case RAINBOW_ONALLMESSAGERECEIPTSENT:
+                logger.debug("RAINBOW_ONALLMESSAGERECEIPTSENT");
+                break;
+        case RAINBOW_ONPRESENCECHANGED:
                 logger.debug("RAINBOW_ONPRESENCECHANGED");
                 break;
-            case RAINBOW_ONMESSAGERECEIPTREADRECEIVED:    
-                logger.debug("RAINBOW_ONMESSAGERECEIPTREADRECEIVED");
-                break;                
-            case RAINBOW_ONROOMMEMBER:
-                logger.debug("RAINBOW_ONROOMMEMBER");
+        case RAINBOW_ONERROR:
+                logger.debug("RAINBOW_ONERROR");
                 break;
-            case RAINBOW_ONROOMINVITE:
-                logger.debug("RAINBOW_ONROOMINVITE");
+        case RAINBOW_ONBUBBLEREMOVED:
+                logger.debug("RAINBOW_ONBUBBLEREMOVED");
                 break;
-            case RAINBOW_ONBUBBLEINVITATIONRECEIVED:
+        case RAINBOW_ONBUBBLEINVITATIONRECEIVED:
                 logger.debug("RAINBOW_ONBUBBLEINVITATIONRECEIVED");
                 break;
-            case RAINBOW_CONNECTED:
-                logger.debug("RAINBOW_CONNECTED");
+        case RAINBOW_ONREADY:
+                logger.debug("RAINBOW_ONREADY");
                 break;
-            case RAINBOW_ONRECEIPT:
-                logger.debug("RAINBOW_ONRECEIPT");
+        case RAINBOW_ONSTARTED:
+                logger.debug("RAINBOW_ONSTARTED");
                 break;
-            case RAINBOW_ONALLRECEIPTRECIVED:
-                logger.debug("RAINBOW_ONALLRECEIPTRECIVED");
+        case RAINBOW_ONCONNECTED:
+                logger.debug("RAINBOW_ONCONNECTED");
                 break;
-            case RAINBOW_ONROOMSTATE:
-                logger.debug("RAINBOW_ONROOMSTATE");
-                break;
-            case RAINBOW_ONSTOPPED:
+        case RAINBOW_ONSTOPPED:
                 logger.debug("RAINBOW_ONSTOPPED");
+                break;
+        case RAINBOW_ONDISCONNECTED:
+                logger.debug("RAINBOW_ONDISCONNECTED");
+                break;
+        case RAINBOW_ONRECONNECTING:
+                logger.debug("RAINBOW_ONRECONNECTING");
+                break;
+        case RAINBOW_ONFAILED:
+                logger.debug("RAINBOW_ONFAILED");
+                break;
+        case RAINBOW_ONBUBBLEAFFILIATIONCHANGED:
+                logger.debug("RAINBOW_ONBUBBLEAFFILIATIONCHANGED");
+                break;
+        case RAINBOW_ONCONVERSATIONREMOVED:
+                logger.debug("RAINBOW_ONCONVERSATIONREMOVED");
+                break;
+        case RAINBOW_ONCONVERSATIONCREATED:
+                logger.debug("RAINBOW_ONCONVERSATIONCREATED");
+                break;
+        case RAINBOW_ONCONVERSATIONUPDATE:
+                logger.debug("RAINBOW_ONCONVERSATIONUPDATE");
+                break;
+        case RAINBOW_ONCHATSTATE:
+                logger.debug("RAINBOW_ONCHATSTATE");
+                break;
+        case RAINBOW_ONRECEIPT:
+                logger.debug("RAINBOW_ONRECEIPT");
                 break;
             default:
         }

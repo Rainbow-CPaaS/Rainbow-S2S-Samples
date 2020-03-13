@@ -71,12 +71,6 @@ class EchoBot implements RainbowEventHandlerInterface
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " " . $this->connectionId . ":\n");
     }
 
-    public function rainbow_onerror($data)
-    {
-        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
-        print_r($data);
-    }
-
     public function rainbow_onmessagereceived($data)
     {
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
@@ -104,17 +98,52 @@ class EchoBot implements RainbowEventHandlerInterface
         }
     }
 
+    public function rainbow_onconnectioncreated($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onconnectionerror($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onmessageserverreceiptreceived($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onmessagereceiptreceived($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onmessagereceiptreadreceived($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onallmessagereceiptreceived($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onallmessagereceiptsent($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
     public function rainbow_onpresencechanged($data)
     {
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
         print_r($data);
     }
-    public function rainbow_onroommember($data)
+    public function rainbow_onerror($data)
     {
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
         print_r($data);
     }
-    public function rainbow_onroominvite($data)
+    public function rainbow_onbubbleremoved($data)
     {
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
         print_r($data);
@@ -124,27 +153,52 @@ class EchoBot implements RainbowEventHandlerInterface
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
         print_r($data);
     }
-    public function rainbow_connected($data)
-    {
-        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
-        print_r($data);
-    }
-    public function rainbow_onreceipt($data)
-    {
-        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
-        print_r($data);
-    }
-    public function rainbow_onallreceiptrecived($data)
-    {
-        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
-        print_r($data);
-    }
-    public function rainbow_onroomstate($data)
+    public function rainbow_onstarted($data)
     {
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
         print_r($data);
     }
     public function rainbow_onstopped($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_ondisconnected($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onreconnecting($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onfailed($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onbubbleaffiliationchanged($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onconversationremoved($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onconversationcreated($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onconversationupdate($data)
+    {
+        print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
+        print_r($data);
+    }
+    public function rainbow_onreceipt($data)
     {
         print("IN " . __CLASS__ . "::" . __FUNCTION__ . " :\n");
         print_r($data);

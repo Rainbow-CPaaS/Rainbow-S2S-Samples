@@ -1,0 +1,7 @@
+{
+	"interpreter": "/usr/bin/php",
+	"program": "./php/src/start.php",
+	"isblocking": true,
+	"args": [
+	]
+}

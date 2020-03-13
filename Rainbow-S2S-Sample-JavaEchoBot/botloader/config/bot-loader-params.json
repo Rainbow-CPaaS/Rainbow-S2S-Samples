@@ -1,0 +1,8 @@
+{
+	"interpreter": "/bin/bash",
+	"program": "./../output/JavaS2SBotSample/start.sh",
+	"isblocking": false,
+	"args": [
+		"../../botloader/config/config.json"
+	]
+}

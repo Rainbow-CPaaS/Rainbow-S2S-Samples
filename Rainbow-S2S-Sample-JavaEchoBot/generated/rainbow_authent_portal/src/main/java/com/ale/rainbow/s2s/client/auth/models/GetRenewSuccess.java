@@ -30,7 +30,7 @@ import java.io.Serializable;
 /**
  * GetRenewSuccess
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-21T22:52:11.612023+01:00[Europe/Paris]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-13T09:48:07.123237+01:00[Europe/Paris]")
 public class GetRenewSuccess implements Serializable {
   private static final long serialVersionUID = 1L;
 

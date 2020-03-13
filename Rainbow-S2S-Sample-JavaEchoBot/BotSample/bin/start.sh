@@ -46,7 +46,7 @@ fi
 
 CALLBAK_URL=$1
 CONFIG_FILE=$2
-JAVA_OPTS="-verbose -Dlog4j.configurationFile=${SCRIPT_DIR}/config/log4j2.xml"
+JAVA_OPTS="-Dlog4j.configurationFile=${SCRIPT_DIR}/config/log4j2.xml"
 echo "$JAVA_CMD $JAVA_OPTS -cp "${FOUND_CLASSPATH}" -jar ${ECHO_BOT_JAR} com.ale.rainbow.s2s.App ${CALLBAK_URL} ${CONFIG_FILE}"
 $JAVA_CMD $JAVA_OPTS -cp "${FOUND_CLASSPATH}" -jar ${ECHO_BOT_JAR} com.ale.rainbow.s2s.App ${CALLBAK_URL} ${CONFIG_FILE}
 exit $SUCCESS_CODE

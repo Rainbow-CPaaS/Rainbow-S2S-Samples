@@ -32,7 +32,7 @@ import java.io.Serializable;
 /**
  * ApiRainbowUcsV10ConnectionsMessage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-21T22:52:16.052964+01:00[Europe/Paris]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-13T09:48:10.776010+01:00[Europe/Paris]")
 public class ApiRainbowUcsV10ConnectionsMessage implements Serializable {
   private static final long serialVersionUID = 1L;
 

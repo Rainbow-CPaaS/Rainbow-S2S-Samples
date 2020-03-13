@@ -1,0 +1,8 @@
+{
+	"interpreter": "/usr/bin/php",
+	"program": "../src/start.php",
+	"isblocking": true,
+	"args": [
+		"--config=../botloader/config/config.json"
+	]
+}

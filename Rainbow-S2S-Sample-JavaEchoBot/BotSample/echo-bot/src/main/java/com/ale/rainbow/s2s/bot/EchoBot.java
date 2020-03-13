@@ -75,6 +75,7 @@ public class EchoBot<T> implements Subscriber<T> {
         this.jsonConfReader = new JSonConfReader();
         this.s2sClient = com.ale.rainbow.s2s.client.s2s.Configuration.getDefaultApiClient();
         this.authClient = com.ale.rainbow.s2s.client.auth.Configuration.getDefaultApiClient();
+        logger.debug("fullPathConfig :" + fullPathConfig);
         this.settings = this.jsonConfReader.getJsonContent(fullPathConfig);
         this.rainbowSettings  = (JSONObject) this.settings.get("rainbow");     
         this.jsonCredSettings  = (JSONObject) this.settings.get("credentials");     
@@ -248,33 +249,65 @@ public void onNext(T t) {
                         this.sendMessage(convId,"Hello I'm Java Echo Bot, please enter a sentence starting with #");
                 }
                 break;
-            case RAINBOW_ONPRESENCECHANGED:
+            case RAINBOW_ONCONNECTIONCREATED:
+                logger.debug("RAINBOW_ONCONNECTIONCREATED");
+                break;
+        case RAINBOW_ONCONNECTIONERROR:
+                logger.debug("RAINBOW_ONCONNECTIONERROR");
+                break;
+        case RAINBOW_ONMESSAGESERVERRECEIPTRECEIVED:
+                logger.debug("RAINBOW_ONMESSAGESERVERRECEIPTRECEIVED");
+                break;
+        case RAINBOW_ONMESSAGERECEIPTRECEIVED:
+                logger.debug("RAINBOW_ONMESSAGERECEIPTRECEIVED");
+                break;
+        case RAINBOW_ONMESSAGERECEIPTREADRECEIVED:
+                logger.debug("RAINBOW_ONMESSAGERECEIPTREADRECEIVED");
+                break;
+        case RAINBOW_ONALLMESSAGERECEIPTRECEIVED:
+                logger.debug("RAINBOW_ONALLMESSAGERECEIPTRECEIVED");
+                break;
+        case RAINBOW_ONALLMESSAGERECEIPTSENT:
+                logger.debug("RAINBOW_ONALLMESSAGERECEIPTSENT");
+                break;
+        case RAINBOW_ONPRESENCECHANGED:
                 logger.debug("RAINBOW_ONPRESENCECHANGED");
                 break;
-            case RAINBOW_ONROOMMEMBER:
-                logger.debug("RAINBOW_ONROOMMEMBER");
+        case RAINBOW_ONBUBBLEREMOVED:
+                logger.debug("RAINBOW_ONBUBBLEREMOVED");
                 break;
-            case RAINBOW_ONROOMINVITE:
-                logger.debug("RAINBOW_ONROOMINVITE");
-                break;
-            case RAINBOW_ONBUBBLEINVITATIONRECEIVED:
+        case RAINBOW_ONBUBBLEINVITATIONRECEIVED:
                 logger.debug("RAINBOW_ONBUBBLEINVITATIONRECEIVED");
                 break;
-            case RAINBOW_CONNECTED:
-                logger.debug("RAINBOW_CONNECTED");
+        case RAINBOW_ONSTARTED:
+                logger.debug("RAINBOW_ONSTARTED");
                 break;
-            case RAINBOW_ONRECEIPT:
-                logger.debug("RAINBOW_ONRECEIPT");
-                break;
-            case RAINBOW_ONALLRECEIPTRECIVED:
-                logger.debug("RAINBOW_ONALLRECEIPTRECIVED");
-                break;
-            case RAINBOW_ONROOMSTATE:
-                logger.debug("RAINBOW_ONROOMSTATE");
-                break;
-            case RAINBOW_ONSTOPPED:
+        case RAINBOW_ONSTOPPED:
                 logger.debug("RAINBOW_ONSTOPPED");
-                RainbowEventHandler.stop();
+                break;
+        case RAINBOW_ONDISCONNECTED:
+                logger.debug("RAINBOW_ONDISCONNECTED");
+                break;
+        case RAINBOW_ONRECONNECTING:
+                logger.debug("RAINBOW_ONRECONNECTING");
+                break;
+        case RAINBOW_ONFAILED:
+                logger.debug("RAINBOW_ONFAILED");
+                break;
+        case RAINBOW_ONBUBBLEAFFILIATIONCHANGED:
+                logger.debug("RAINBOW_ONBUBBLEAFFILIATIONCHANGED");
+                break;
+        case RAINBOW_ONCONVERSATIONREMOVED:
+                logger.debug("RAINBOW_ONCONVERSATIONREMOVED");
+                break;
+        case RAINBOW_ONCONVERSATIONCREATED:
+                logger.debug("RAINBOW_ONCONVERSATIONCREATED");
+                break;
+        case RAINBOW_ONCONVERSATIONUPDATE:
+                logger.debug("RAINBOW_ONCONVERSATIONUPDATE");
+                break;
+        case RAINBOW_ONRECEIPT:
+                logger.debug("RAINBOW_ONRECEIPT");
                 break;
             default:
         }
