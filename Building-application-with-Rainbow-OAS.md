@@ -126,7 +126,7 @@ This module validates all recieved data according to contract defined in swagger
 S2S predefined event list :
 
 | S2S events | Description |
-|-------------------------------------|
+| ------------------------------------- | ----------------------------------- |
 | **rainbow_onconnectioncreated** | Fired when the connection with rainbow is created bot not sign in |
 | **rainbow_onconnectionerror** | Fired when the connection can't be done with Rainbow (ie. issue on sign-in) |
 | **rainbow_onmessagereceived** | Fired when a one-to-one message is received |
