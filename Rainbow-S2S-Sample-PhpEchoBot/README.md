@@ -36,6 +36,7 @@ Php EchoBot is now ready to be used, we are going to setup the nodejs loader scr
 5 -  go to botloader directory (my_working_dir/Rainbow-S2S-Samples/Rainbow-S2S-Sample-PhpEchoBot/botlader)
 
 6 - Update config/config.json with your registered user and application
+See section [Configuration file](https://github.com/Rainbow-CPaaS/Rainbow-S2S-Samples/blob/master/Building-application-with-Rainbow-OAS.md#configuration-files) of "Building S2S based application with Rainbow OpenAPI Specifications file and S2S Starter Kit" document for details.
 
 7 - start PhpEchoBot by running the command below:
 >my_working_dir/Rainbow-S2S-Samples/Rainbow-S2S-Sample-PhpEchoBot/botlader# node s2s-zmq-bot-loader.js

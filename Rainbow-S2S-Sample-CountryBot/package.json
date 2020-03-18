@@ -9,8 +9,10 @@
   "author": "J.Ouedje",
   "license": "ISC",
   "dependencies": {
+    "core-js": "^3.6.4",
     "json2md": "^1.6.5",
     "node-getopt": "^0.3.2",
+    "rainbow-s2s-starterkit-nodejs": "^1.0.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   }

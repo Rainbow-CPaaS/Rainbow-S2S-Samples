@@ -4,8 +4,7 @@
  * Description : Rainbow-S2S-Starterkit-NodeJS launcher file
  *=============================================================*/
 const S2sStarterkit = require('rainbow-s2s-starterkit-nodejs');
-const s2sStarterkitConfig = require('./config/config.json');
-const myCountryBot = require('./modules/bot');
+const sdkConfig = require('./config/config.json');
 
 let cmdLineArgs = require('node-getopt').create([
         ['L', 'protocol=ARG', 'http protocol [http or https]'],
@@ -17,10 +16,9 @@ let cmdLineArgs = require('node-getopt').create([
     .bindHelp() // bind option 'help' to default action
     .parseSystem(); // parse command line
 
-const myS2sStarterkit = new S2sStarterkit(s2sStarterkitConfig);
+const myS2sStarterkit = new S2sStarterkit(sdkConfig);
 (async() => {
         await myS2sStarterkit.start().then((data) => {
-		myCountryBot.start(myS2sStarterkit);
 		// data contains the callback_url
 		// so your bot startup script can be called here if the bot is implemented in another language
         }).catch((e) => {

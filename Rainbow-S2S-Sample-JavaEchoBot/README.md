@@ -14,14 +14,14 @@ The implementation principle is already describe in [Building-application-with-R
 
 if your working directory is **my_working_dir**
 
-1 -  go to my_working_dir
+1 -  Go to my_working_dir
 > my_working_dir#
 
-2 -  clone [Rainbow-S2S-Samples](https://github.com/Rainbow-CPaaS/Rainbow-S2S-Samples) from github
+2 -  Clone [Rainbow-S2S-Samples](https://github.com/Rainbow-CPaaS/Rainbow-S2S-Samples) from github
 
 >my_working_dir#clone https://github.com/Rainbow-CPaaS/Rainbow-S2S-Samples.git
 
-3 -  go to java bot sample dir tools Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/scripts
+3 -  Go to java bot sample dir tools Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/scripts
 
 >my_working_dir# cd Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/scripts
 my_working_dir/Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/scripts#
@@ -36,12 +36,13 @@ java EchoBot is now ready to be used, we are going start it using nodejs loader 
 
 >my_working_dir/Rainbow-S2S-Samples/Rainbow-S2S-Sample-JavaEchoBot/botloader#
 
-6 -  edit my_working_dir/javabotloader/config/config.json to fit your registered credentials
+6 -  Edit my_working_dir/javabotloader/config/config.json to fit your registered credentials
+See section [Configuration files](https://github.com/Rainbow-CPaaS/Rainbow-S2S-Samples/blob/master/Building-application-with-Rainbow-OAS.md#configuration-files) of "Building S2S based application with Rainbow OpenAPI Specifications file and S2S Starter Kit" document for details.
 
-7 -  start JavaEchBot by typing node s2s-zmq-bot-loader.js
+7 -  Start JavaEchBot by typing node s2s-zmq-bot-loader.js
 
 >my_working_dir/javabotloader# node s2s-zmq-bot-loader.js
 
-8 - connect with rainbow web client with your registered credentials on the plateform were your the bot is registered.
+8 - Connect with rainbow web client with your registered credentials on the plateform were your the bot is registered.
 
-9 - send an IM message starting with #
+9 - Send an IM message starting with #

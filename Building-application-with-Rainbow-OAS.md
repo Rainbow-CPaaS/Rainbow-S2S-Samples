@@ -49,6 +49,7 @@ Rainbow-S2S-Starterkit-NodeJS  configuration file is used to confiure 6 main ent
 | im | enables or disables automatic IM read acknowlegdement |
 | rainbow_notification_service | configure each component (Rainbow-S2S-Starterkit-NodeJS internal proxy named ngrok or your own reverse proxy and zmq ) involved in webhook event notification |
 
+If you haven't got a rainbow account, you can register on [openrainbow hub](https://hub.openrainbow.com/) and have your credentials.
 
 S2S NodeJS Starterkit has 
 
